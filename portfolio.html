@@ -17,35 +17,27 @@
             background-color: #e8e2e2;
         }
 
-
         header {
             display: flex;
             justify-content: space-between;
             align-items: center;
-
             padding: 2px 50px;
-
             background-color: #96ced4;
-
             background-image:
                 radial-gradient(circle, #7c9a9d 3.5px, transparent 3.5px),
                 radial-gradient(circle, #7c9a9d 3.5px, transparent 3.5px);
-
             background-size: 20px 20px;
             background-position: 0 0, 10px 10px;
         }
-
 
         h1 {
             font-size: 40px;
             color: #ffffff;
         }
 
-
         nav {
             display: flex;
             gap: 20px;
-
             font-size: 25px;
             font-weight: bold;
         }
@@ -53,7 +45,6 @@
         nav a {
             color: #ffffff;
             text-decoration: none;
-
             transition: 0.3s;
         }
 
@@ -62,13 +53,9 @@
             transform: scale(1.1);
         }
 
-
-
         section {
             padding: 50px;
-
-            box-shadow:
-                0 8px 20px rgba(25, 60, 64, 0.12);
+            box-shadow: 0 8px 20px rgba(25, 60, 64, 0.12);
         }
 
         h2 {
@@ -80,40 +67,28 @@
             color: #193c40;
         }
 
-
-        /* =========================
-           HOME
-        ========================= */
-
         #home {
             display: flex;
             justify-content: center;
             align-items: center;
-
             text-align: center;
-
             padding: 30px 10px;
-
-            gap: 80px;
-
+            gap: 40px;
             margin: 40px;
-
             border-radius: 15px;
-
             background-color: #98c2c3;
-
-            box-shadow:
-                0 8px 20px rgba(25, 60, 64, 0.12);
+            box-shadow: 0 8px 20px rgba(25, 60, 64, 0.12);
         }
 
         #home img {
             width: 150px;
             height: 150px;
-
             border-radius: 50%;
         }
 
-
+        .intro {
+            max-width: 500px;
+        }
 
         #about {
             text-align: center;
@@ -123,13 +98,9 @@
         .pm {
             text-align: justify;
             text-justify: inter-word;
-
             width: 80%;
-
             margin: auto;
         }
-
-
 
         #skills {
             text-align: center;
@@ -137,27 +108,17 @@
 
         .grid {
             display: flex;
-
             gap: 20px;
-
             flex-wrap: wrap;
-
             justify-content: center;
         }
 
-
         .card {
             background-color: #ffffff;
-
             padding: 20px;
-
             width: 200px;
-
             border-radius: 15px;
-
-            box-shadow:
-                0 8px 20px rgba(25, 60, 64, 0.12);
-
+            box-shadow: 0 8px 20px rgba(25, 60, 64, 0.12);
             transition: transform 0.3s;
         }
 
@@ -169,52 +130,72 @@
             color: #193c40;
         }
 
-
-
-        #contact {
+        #game {
             text-align: center;
-
             margin-top: 20px;
         }
 
+        #container {
+            position: relative;
+            width: 100%;
+            height: 300px;
+            margin-top: 20px;
+            padding: 20px;
+            box-sizing: border-box;
+            border: 2px solid #193c40;
+            border-radius: 15px;
+            background-color: #e4e9ec;
+            overflow: hidden;
+        }
+
+        #object {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            width: 90px;
+            height: 45px;
+            padding: 10px;
+            box-sizing: border-box;
+            border: 2px solid #193c40;
+            border-radius: 10px;
+            background-color: #96ced4;
+            color: #193c40;
+            font-size: 12px;
+            text-align: center;
+            cursor: pointer;
+        }
+
+        #contact {
+            text-align: center;
+            margin-top: 20px;
+        }
 
         .button {
             display: inline-block;
-
-            background-color: #193c40;
-
-            color: white;
-
-            padding: 10px 20px;
-
-            text-decoration: none;
-
-            border-radius: 5px;
-
+            background-color: #b1c4ca;
+            padding: 20px;
+            width: 200px;
+            border-radius: 15px;
+            box-shadow: 0 8px 20px rgba(25, 60, 64, 0.12);
             transition: transform 0.3s;
+            text-decoration: none;
+            color: #193c40;
         }
 
         .button:hover {
             transform: scale(1.1);
         }
 
-
-
         footer {
             background-color: #96ced4;
-
             text-align: center;
-
             padding: 20px;
         }
 
-
         @media (max-width: 600px) {
-
 
             header {
                 flex-direction: column;
-
                 padding: 15px;
             }
 
@@ -222,27 +203,17 @@
                 font-size: 30px;
             }
 
-
-
             nav {
                 flex-wrap: wrap;
-
                 justify-content: center;
-
                 gap: 15px;
-
                 font-size: 18px;
             }
 
-
-
             #home {
                 flex-direction: column;
-
-                gap: 20px;
-
+                gap: 15px;
                 margin: 20px;
-
                 padding: 30px 20px;
             }
 
@@ -251,26 +222,28 @@
                 height: 130px;
             }
 
-
-
             section {
                 padding: 30px 20px;
             }
 
-
-
             .pm {
                 width: 100%;
-
                 text-align: justify;
             }
-
 
             .card {
                 width: 80%;
             }
 
- 
+            #container {
+                height: 250px;
+            }
+
+            #object {
+                width: 80px;
+                height: 40px;
+            }
+
             footer {
                 padding: 15px;
             }
@@ -281,10 +254,7 @@
 
 </head>
 
-
 <body>
-
-
 
     <header>
 
@@ -298,13 +268,14 @@
 
             <a href="#skills">Skills</a>
 
+            <a href="#game">Game</a>
+
             <a href="#contact">Contact</a>
 
         </nav>
 
     </header>
 
- 
 
     <section id="home">
 
@@ -313,7 +284,7 @@
             alt="Profile Picture"
         >
 
-        <div>
+        <div class="intro">
 
             <h2>
                 ☁️Hello! I'm Cyza Kathleen T. Bartolome☁️
@@ -330,7 +301,7 @@
         </div>
 
     </section>
- 
+
 
     <section id="about">
 
@@ -366,14 +337,11 @@
     </section>
 
 
- 
-
     <section id="skills">
 
         <h2>My Skills ✨</h2>
 
         <div class="grid">
-
 
             <div class="card">
 
@@ -392,7 +360,6 @@
             </div>
 
 
-
             <div class="card">
 
                 <h3>Drawing</h3>
@@ -407,7 +374,6 @@
                 </p>
 
             </div>
-
 
 
             <div class="card">
@@ -426,12 +392,29 @@
 
             </div>
 
+        </div>
+
+    </section>
+
+
+    <section id="game">
+
+        <h2>Game Break! 🎮</h2>
+
+        <p>
+            Are you bored? Let's play!
+        </p>
+
+        <div id="container">
+
+            <div id="object">
+                Catch me!
+            </div>
 
         </div>
 
     </section>
 
- 
 
     <section id="contact">
 
@@ -451,9 +434,6 @@
     </section>
 
 
-
-    <!-- FOOTER -->
-
     <footer>
 
         <p>
@@ -462,6 +442,26 @@
 
     </footer>
 
+
+    <script>
+
+        var object = document.getElementById("object");
+        var container = document.getElementById("container");
+
+        object.addEventListener("mouseover", function() {
+
+            var maxTop = container.clientHeight - object.offsetHeight;
+            var maxLeft = container.clientWidth - object.offsetWidth;
+
+            var randomTop = Math.floor(Math.random() * maxTop);
+            var randomLeft = Math.floor(Math.random() * maxLeft);
+
+            object.style.top = randomTop + "px";
+            object.style.left = randomLeft + "px";
+
+        });
+
+    </script>
 
 </body>
 
