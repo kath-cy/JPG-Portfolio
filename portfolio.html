@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>My Portfolio</title>
+
+    <style>
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #e8e2e2;
+        }
+
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            padding: 2px 50px;
+
+            background-color: #96ced4;
+
+            background-image:
+                radial-gradient(circle, #7c9a9d 3.5px, transparent 3.5px),
+                radial-gradient(circle, #7c9a9d 3.5px, transparent 3.5px);
+
+            background-size: 20px 20px;
+            background-position: 0 0, 10px 10px;
+        }
+
+
+        h1 {
+            font-size: 40px;
+            color: #ffffff;
+        }
+
+
+        nav {
+            display: flex;
+            gap: 20px;
+
+            font-size: 25px;
+            font-weight: bold;
+        }
+
+        nav a {
+            color: #ffffff;
+            text-decoration: none;
+
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: #193c40;
+            transform: scale(1.1);
+        }
+
+
+
+        section {
+            padding: 50px;
+
+            box-shadow:
+                0 8px 20px rgba(25, 60, 64, 0.12);
+        }
+
+        h2 {
+            color: #402a19;
+        }
+
+        p {
+            font-size: 16px;
+            color: #193c40;
+        }
+
+
+        /* =========================
+           HOME
+        ========================= */
+
+        #home {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            text-align: center;
+
+            padding: 30px 10px;
+
+            gap: 80px;
+
+            margin: 40px;
+
+            border-radius: 15px;
+
+            background-color: #98c2c3;
+
+            box-shadow:
+                0 8px 20px rgba(25, 60, 64, 0.12);
+        }
+
+        #home img {
+            width: 150px;
+            height: 150px;
+
+            border-radius: 50%;
+        }
+
+
+
+        #about {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .pm {
+            text-align: justify;
+            text-justify: inter-word;
+
+            width: 80%;
+
+            margin: auto;
+        }
+
+
+
+        #skills {
+            text-align: center;
+        }
+
+        .grid {
+            display: flex;
+
+            gap: 20px;
+
+            flex-wrap: wrap;
+
+            justify-content: center;
+        }
+
+
+        .card {
+            background-color: #ffffff;
+
+            padding: 20px;
+
+            width: 200px;
+
+            border-radius: 15px;
+
+            box-shadow:
+                0 8px 20px rgba(25, 60, 64, 0.12);
+
+            transition: transform 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-8px);
+        }
+
+        .card h3 {
+            color: #193c40;
+        }
+
+
+
+        #contact {
+            text-align: center;
+
+            margin-top: 20px;
+        }
+
+
+        .button {
+            display: inline-block;
+
+            background-color: #193c40;
+
+            color: white;
+
+            padding: 10px 20px;
+
+            text-decoration: none;
+
+            border-radius: 5px;
+
+            transition: transform 0.3s;
+        }
+
+        .button:hover {
+            transform: scale(1.1);
+        }
+
+
+
+        footer {
+            background-color: #96ced4;
+
+            text-align: center;
+
+            padding: 20px;
+        }
+
+
+        @media (max-width: 600px) {
+
+
+            header {
+                flex-direction: column;
+
+                padding: 15px;
+            }
+
+            h1 {
+                font-size: 30px;
+            }
+
+
+
+            nav {
+                flex-wrap: wrap;
+
+                justify-content: center;
+
+                gap: 15px;
+
+                font-size: 18px;
+            }
+
+
+
+            #home {
+                flex-direction: column;
+
+                gap: 20px;
+
+                margin: 20px;
+
+                padding: 30px 20px;
+            }
+
+            #home img {
+                width: 130px;
+                height: 130px;
+            }
+
+
+
+            section {
+                padding: 30px 20px;
+            }
+
+
+
+            .pm {
+                width: 100%;
+
+                text-align: justify;
+            }
+
+
+            .card {
+                width: 80%;
+            }
+
+ 
+            footer {
+                padding: 15px;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+
+    <header>
+
+        <h1>My Portfolio</h1>
+
+        <nav>
+
+            <a href="#home">Home</a>
+
+            <a href="#about">About</a>
+
+            <a href="#skills">Skills</a>
+
+            <a href="#contact">Contact</a>
+
+        </nav>
+
+    </header>
+
+ 
+
+    <section id="home">
+
+        <img
+            src="https://drawcartoonstyle.com/wp-content/uploads/2023/06/5-draw-the-outline-of-the-accent.jpg"
+            alt="Profile Picture"
+        >
+
+        <div>
+
+            <h2>
+                ☁️Hello! I'm Cyza Kathleen T. Bartolome☁️
+            </h2>
+
+            <p>
+                Your Smiley Computer Science Student 🖥️
+            </p>
+
+            <p>
+                This is my first portfolio website!
+            </p>
+
+        </div>
+
+    </section>
+ 
+
+    <section id="about">
+
+        <h2>About Me 🩵</h2>
+
+        <p class="pm">
+
+            I am a shy and quiet person, especially when I am around
+            people I am not familiar with. Even though I can be quiet
+            at first, I can be fun and easy to be with once I become
+            comfortable. I enjoy spending time with people who make
+            me feel comfortable and accepted. I also like solving
+            problems because I enjoy figuring things out and finding
+            possible solutions. Because of this, I slowly became
+            interested in programming. At first, programming was
+            something new and challenging for me, but I started to
+            enjoy learning how things work through code. I may be a
+            slow learner and sometimes forgetful, but I do not want
+            that to stop me from improving. I know that learning
+            programming takes time, patience, and a lot of practice.
+            That is why I am willing to keep practicing and work on
+            my skills little by little. As I continue learning, I
+            have become interested in pursuing a career in
+            cybersecurity or backend development. I am still exploring
+            which path fits me best, but I am excited to see where
+            my interest in programming will take me. In the future,
+            I hope to master my programming skills and become someone
+            who can create useful and meaningful solutions through
+            technology.
+
+        </p>
+
+    </section>
+
+
+ 
+
+    <section id="skills">
+
+        <h2>My Skills ✨</h2>
+
+        <div class="grid">
+
+
+            <div class="card">
+
+                <h3>Swimming</h3>
+
+                <p>
+
+                    I have basic swimming skills and can move
+                    comfortably in the water. I know how to perform
+                    simple strokes and maintain proper breathing.
+                    I can also swim independently while practicing
+                    to improve my technique.
+
+                </p>
+
+            </div>
+
+
+
+            <div class="card">
+
+                <h3>Drawing</h3>
+
+                <p>
+
+                    I like to draw when I’m bored, although I’m not
+                    that good at it yet. I mostly draw for fun and
+                    because I like being creative and expressing
+                    myself through art.
+
+                </p>
+
+            </div>
+
+
+
+            <div class="card">
+
+                <h3>Programming</h3>
+
+                <p>
+
+                    I enjoy programming and like learning how to code.
+                    So far, I have learned the basics of C++ and I’m
+                    still improving my skills. I’m looking forward to
+                    learning more about programming and exploring
+                    different areas in the future.
+
+                </p>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+ 
+
+    <section id="contact">
+
+        <h2>Contact Me 💌</h2>
+
+        <p>
+            Want to say hello?
+        </p>
+
+        <a
+            class="button"
+            href="mailto:youremail@example.com"
+        >
+            Email Me
+        </a>
+
+    </section>
+
+
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <p>
+            © 2026 Cyza | Made with ♡ and code
+        </p>
+
+    </footer>
+
+
+</body>
+
+</html>
